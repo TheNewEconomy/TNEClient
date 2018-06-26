@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tnemod",
+  "name": "The New Economy Mod",
+  "description": "Client companion for The New Economy Bukkit Plugin.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["creatorfromhell"],
+  "credits": "To the server owners that use The New Economy.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

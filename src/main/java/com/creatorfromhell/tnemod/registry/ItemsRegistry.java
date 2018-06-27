@@ -1,7 +1,6 @@
 package com.creatorfromhell.tnemod.registry;
 
 import com.creatorfromhell.tnemod.item.TNEItem;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 
@@ -16,8 +15,8 @@ import net.minecraftforge.registries.IForgeRegistry;
  */
 public class ItemsRegistry {
 
-  public static final TNEItem majorCurrency = new TNEItem("major_currency").setCreativeTab(CreativeTabs.MISC);
-  public static final TNEItem minorCurrency = new TNEItem("minor_currency").setCreativeTab(CreativeTabs.MISC);
+  public static final TNEItem majorCurrency = new TNEItem("major_currency");
+  public static final TNEItem minorCurrency = new TNEItem("minor_currency");
 
   public static void register(IForgeRegistry<Item> registry) {
     registry.registerAll(

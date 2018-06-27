@@ -1,5 +1,6 @@
 package com.creatorfromhell.tnemod;
 
+import com.creatorfromhell.tnemod.item.TNETab;
 import com.creatorfromhell.tnemod.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -29,7 +30,8 @@ public class TheNewEconomyMod
     @SidedProxy(serverSide = "com.creatorfromhell.tnemod.proxy.CommonProxy", clientSide = "com.creatorfromhell.tnemod.proxy.ClientProxy")
     public static CommonProxy proxy;
 
-    //items
+    public static final TNETab tab = new TNETab();
+
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)

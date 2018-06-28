@@ -1,6 +1,5 @@
 package com.creatorfromhell.tnemod.item;
 
-import com.creatorfromhell.tnemod.TheNewEconomyMod;
 import com.creatorfromhell.tnemod.registry.ItemsRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
@@ -17,7 +16,7 @@ import net.minecraft.item.ItemStack;
 public class TNETab extends CreativeTabs {
 
   public TNETab() {
-    super(TheNewEconomyMod.MODID);
+    super("Currency");
   }
 
   @Override

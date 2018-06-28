@@ -7,13 +7,18 @@ import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 import net.minecraftforge.fml.relauncher.Side;
 
+import java.nio.charset.StandardCharsets;
+
 public class TNEModCheckMessage implements IMessage {
+
+  private String uuid = "";
   /**
    * Convert from the supplied buffer into your specific message type
    */
   @Override
   public void fromBytes(ByteBuf buf) {
-
+    int length = buf.readInt();
+    uuid = buf.readBytes(length).toString(StandardCharsets.UTF_8);
   }
 
   /**
@@ -21,7 +26,7 @@ public class TNEModCheckMessage implements IMessage {
    */
   @Override
   public void toBytes(ByteBuf buf) {
-    ByteBufUtils.writeUTF8String(buf, "TNEMOD");
+    ByteBufUtils.writeUTF8String(buf, uuid);
   }
 
   public static class Handler implements IMessageHandler<TNEModCheckMessage, IMessage> {

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "theneweconomy:items/minor_currency"
+    "layer0": "tnemod:items/minor_currency"
   }
 }
